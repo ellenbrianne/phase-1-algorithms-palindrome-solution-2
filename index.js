@@ -1,10 +1,8 @@
 function isPalindrome(word) {
   for (let i = 0; i < word.length / 2; i++) {
     const j = word.length - 1 - i;
-    const endChar = word[j];
-    const startChar = word[i];
 
-    if (startChar !== endChar) {
+    if (word[i] !== word[j]) {
       return false
     }
   }
